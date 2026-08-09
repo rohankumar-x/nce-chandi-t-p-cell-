@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nalanda College of Engineering, Chandi | Training & Placement Cell</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nce: {
+              navy: '#0F172A',
+              blue: '#1E3A8A',
+              accent: '#2563EB',
+              gold: '#F59E0B',
+              light: '#F8FAFC'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-nce-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2 truncate">
+        <span class="bg-nce-gold text-slate-900 font-bold px-2 py-0.5 rounded text-xs uppercase tracking-wide">Notice</span>
+        <span class="truncate">Upcoming Campus Drive: TCS Ninja 2026 Batch - Registration closes Aug 15</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-4 text-xs">
+        <a href="https://ncechandi.ac.in" target="_blank" class="hover:text-white transition-colors">Main College Portal</a>
+        <span>|</span>
+        <a href="#contact" class="hover:text-white transition-colors">Helpline: +91 6111 200 000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navigation -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        
+        <!-- Logo & Full Branding -->
+        <div class="flex items-center space-x-3">
+          <!-- Institutional Emblem / Seal Logo -->
+         <!-- Institutional Emblem / Seal Logo -->
+              <img src="https://ncechandi.ac.in/wp-content/uploads/2020/12/logo10.jpg" alt="NCE Chandi Logo" class="w-12 h-12 object-contain shrink-0">
+          <div>
+            <h1 class="font-extrabold text-slate-900 leading-tight text-base sm:text-lg">
+              Nalanda College of Engineering, Chandi
+            </h1>
+            <p class="text-xs text-nce-accent font-semibold tracking-wide uppercase">
+              Training & Placement Cell
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-700">
+          <a href="#home" class="hover:text-nce-accent transition-colors">Home</a>
+          <a href="#about" class="hover:text-nce-accent transition-colors">About T&P</a>
+          <a href="#statistics" class="hover:text-nce-accent transition-colors">Placement Stats</a>
+          <a href="#drives" class="hover:text-nce-accent transition-colors">Upcoming Drives</a>
+          <a href="#recruiters" class="hover:text-nce-accent transition-colors">Our Recruiters</a>
+          <a href="#resources" class="hover:text-nce-accent transition-colors">Student Hub</a>
+        </nav>
+
+        <!-- CTA & Portals -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <button class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold transition-colors flex items-center gap-1.5">
+            <i data-lucide="lock" class="w-4 h-4"></i> Recruiter Portal
+          </button>
+          <button class="bg-nce-accent hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm">
+            Student Login
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-6 space-y-3">
+      <a href="#home" class="block py-2 text-slate-700 font-medium">Home</a>
+      <a href="#about" class="block py-2 text-slate-700 font-medium">About T&P</a>
+      <a href="#statistics" class="block py-2 text-slate-700 font-medium">Placement Stats</a>
+      <a href="#drives" class="block py-2 text-slate-700 font-medium">Upcoming Drives</a>
+      <a href="#recruiters" class="block py-2 text-slate-700 font-medium">Our Recruiters</a>
+      <a href="#resources" class="block py-2 text-slate-700 font-medium">Student Hub</a>
+      <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+        <button class="w-full bg-slate-100 text-slate-700 py-2 rounded-lg font-semibold text-center">Recruiter Portal</button>
+        <button class="w-full bg-nce-accent text-white py-2 rounded-lg font-semibold text-center">Student Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative bg-gradient-to-br from-nce-navy via-slate-900 to-nce-blue text-white py-20 lg:py-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-blue-500/20 text-blue-300 border border-blue-400/30 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+            <i data-lucide="award" class="w-4 h-4 text-nce-gold"></i> Mentored by IIT Bombay
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            Connecting Top Talent with Global Opportunities
+          </h2>
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Nalanda College of Engineering (NCE Chandi) equips future-ready engineers across 6 specialized disciplines with cutting-edge technical expertise, innovation mindsets, and professional excellence.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#drives" class="bg-nce-accent hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+              View Placement Drives <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#contact" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-3 rounded-lg border border-white/20 transition-all flex items-center gap-2">
+              Recruiter Registration <i data-lucide="building" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Metrics Cards -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-xl">
+            <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Highest Package</p>
+            <p class="text-3xl font-extrabold text-nce-gold mt-2">₹18.5 LPA</p>
+            <p class="text-xs text-slate-300 mt-1">Batch 2024-25</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-xl">
+            <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Placement Rate</p>
+            <p class="text-3xl font-extrabold text-blue-400 mt-2">86%</p>
+            <p class="text-xs text-slate-300 mt-1">Across B.Tech Programs</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-xl">
+            <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">Recruiting Partners</p>
+            <p class="text-3xl font-extrabold text-emerald-400 mt-2">80+</p>
+            <p class="text-xs text-slate-300 mt-1">National & Global</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-xl">
+            <p class="text-xs uppercase text-slate-400 font-semibold tracking-wider">UG Disciplines</p>
+            <p class="text-3xl font-extrabold text-purple-400 mt-2">6 Specialized</p>
+            <p class="text-xs text-slate-300 mt-1">CSE, AI/ML, Aero & More</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutional Overview -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold text-nce-accent uppercase tracking-widest mb-2">Institutional Legacy</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Why Recruit from NCE Chandi?</h3>
+        <p class="text-slate-600 mt-3 text-sm sm:text-base">
+          Inaugurated on November 19, 2008, Nalanda College of Engineering operates under the Department of Science, Technology and Technical Education, Govt. of Bihar, and is affiliated with Bihar Engineering University.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-blue-100 text-nce-accent rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Modern Academic Programs</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Offering B.Tech in CSE, AI & ML, Aeronautical, Civil, Electrical & Electronics, and Mechanical Engineering, alongside advanced M.Tech programs in Power Systems and CSE.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="database" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">State-of-the-Art Labs</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            A 51.68-acre campus housing a modern Computer Centre with 180+ LAN-connected high-speed systems, departmental libraries, and advanced research workshops.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-lg text-slate-900 mb-2">Holistic Development</h4>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Students lead technical innovation via the Coding Club, Startup/E-Cell, Spark Photography, Atisa Tech Fest, and civil services prep initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Drives & Placement Updates -->
+  <section id="drives" class="py-16 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <h2 class="text-xs font-bold text-nce-accent uppercase tracking-widest mb-2">Placement Calendar</h2>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Upcoming Drives & Opportunities</h3>
+        </div>
+        <div class="flex gap-2">
+          <button class="bg-white border border-slate-300 text-slate-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-slate-100 transition-colors">
+            Filter by Branch
+          </button>
+          <button class="bg-nce-accent text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
+            Register for Drive
+          </button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Drive Card 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded">Active Drive</span>
+              <h4 class="font-bold text-lg text-slate-900 mt-2">Tata Consultancy Services</h4>
+            </div>
+            <span class="text-sm font-extrabold text-slate-700">₹7.0 LPA</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4 flex items-center gap-1">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> Software Engineer / System Engineer
+          </p>
+          <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+            <div class="flex justify-between">
+              <span class="text-slate-400">Eligible Branches:</span>
+              <span class="font-semibold text-slate-700">CSE, AI/ML, EEE</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Drive Date:</span>
+              <span class="font-semibold text-slate-700">August 22, 2026</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Deadline:</span>
+              <span class="font-semibold text-red-600">August 15, 2026</span>
+            </div>
+          </div>
+          <button class="w-full mt-5 bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2 rounded-lg text-sm transition-colors">
+            Apply Now
+          </button>
+        </div>
+
+        <!-- Drive Card 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded">Upcoming</span>
+              <h4 class="font-bold text-lg text-slate-900 mt-2">L&T Construction</h4>
+            </div>
+            <span class="text-sm font-extrabold text-slate-700">₹6.5 LPA</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4 flex items-center gap-1">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> Graduate Engineer Trainee (GET)
+          </p>
+          <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+            <div class="flex justify-between">
+              <span class="text-slate-400">Eligible Branches:</span>
+              <span class="font-semibold text-slate-700">Civil, Mechanical</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Drive Date:</span>
+              <span class="font-semibold text-slate-700">September 05, 2026</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Deadline:</span>
+              <span class="font-semibold text-red-600">August 28, 2026</span>
+            </div>
+          </div>
+          <button class="w-full mt-5 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2 rounded-lg text-sm transition-colors">
+            View Details
+          </button>
+        </div>
+
+        <!-- Drive Card 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-1 rounded">Shortlisting</span>
+              <h4 class="font-bold text-lg text-slate-900 mt-2">HCL Tech</h4>
+            </div>
+            <span class="text-sm font-extrabold text-slate-700">₹5.2 LPA</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4 flex items-center gap-1">
+            <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> Software Associate
+          </p>
+          <div class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-3">
+            <div class="flex justify-between">
+              <span class="text-slate-400">Eligible Branches:</span>
+              <span class="font-semibold text-slate-700">All B.Tech Disciplines</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Drive Date:</span>
+              <span class="font-semibold text-slate-700">September 12, 2026</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-400">Deadline:</span>
+              <span class="font-semibold text-slate-500">Closed</span>
+            </div>
+          </div>
+          <button class="w-full mt-5 bg-slate-100 text-slate-400 cursor-not-allowed font-semibold py-2 rounded-lg text-sm">
+            Applications Closed
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Statistics & Branch Matrix -->
+  <section id="statistics" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold text-nce-accent uppercase tracking-widest mb-2">Performance Metrics</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Branch-wise Seat Matrix & Placement Distribution</h3>
+      </div>
+
+      <div class="overflow-x-auto border border-slate-200 rounded-xl">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
+              <th class="p-4">Department / Program</th>
+              <th class="p-4">Degree</th>
+              <th class="p-4">Annual Intake</th>
+              <th class="p-4">Placement Rate</th>
+              <th class="p-4">Avg Package</th>
+              <th class="p-4">Top Recruiters</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-sm">
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Computer Science & Engineering</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">92%</td>
+              <td class="p-4">₹6.8 LPA</td>
+              <td class="p-4 text-xs text-slate-500">TCS, Wipro, Infosys</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Artificial Intelligence & ML</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">88%</td>
+              <td class="p-4">₹7.2 LPA</td>
+              <td class="p-4 text-xs text-slate-500">Cognizant, Tech Mahindra</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Civil Engineering</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">81%</td>
+              <td class="p-4">₹5.5 LPA</td>
+              <td class="p-4 text-xs text-slate-500">L&T, Afcons, Bihar Govt. Sector</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Mechanical Engineering</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">84%</td>
+              <td class="p-4">₹5.8 LPA</td>
+              <td class="p-4 text-xs text-slate-500">Tata Motors, Hero MotoCorp</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Electrical & Electronics Engg.</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">85%</td>
+              <td class="p-4">₹6.0 LPA</td>
+              <td class="p-4 text-xs text-slate-500">PowerGrid, Schneider Electric</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-4 font-bold text-slate-900">Aeronautical Engineering</td>
+              <td class="p-4 text-slate-600">B.Tech</td>
+              <td class="p-4 font-semibold">60 Seats</td>
+              <td class="p-4 text-emerald-600 font-bold">79%</td>
+              <td class="p-4">₹6.4 LPA</td>
+              <td class="p-4 text-xs text-slate-500">Aerospace R&D, Tech Consultancies</td>
+            </tr>
+            <tr class="bg-slate-50 hover:bg-slate-100">
+              <td class="p-4 font-bold text-slate-900">Power Systems / CSE</td>
+              <td class="p-4 text-slate-600">M.Tech</td>
+              <td class="p-4 font-semibold">PG Intake</td>
+              <td class="p-4 text-emerald-600 font-bold">80%</td>
+              <td class="p-4">₹7.5 LPA</td>
+              <td class="p-4 text-xs text-slate-500">Core Engineering & Academia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recruiters Carousel / Wall -->
+  <section id="recruiters" class="py-16 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-xs font-bold text-nce-accent uppercase tracking-widest mb-2">Industrial Alliances</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Prominent Recruiting Partners</h3>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">TCS</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Wipro</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Infosys</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Cognizant</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">L&T</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">HCL Tech</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Tech Mahindra</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">PowerGrid</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Hero MotoCorp</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Afcons</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Ceat Tyres</div>
+        <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm flex items-center justify-center font-extrabold text-slate-700 h-20 text-center">Prism Johnson</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Hub & Placement Resources -->
+  <section id="resources" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold text-nce-accent uppercase tracking-widest mb-2">Student Enablement</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Placement Preparation Hub</h3>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <i data-lucide="file-text" class="w-8 h-8 text-blue-600 mb-3"></i>
+            <h4 class="font-bold text-slate-900 mb-1">Resume Templates</h4>
+            <p class="text-xs text-slate-600">Standard ATS-friendly formats approved by the T&P Cell for campus drives.</p>
+          </div>
+          <a href="#" class="mt-4 text-xs font-bold text-nce-accent flex items-center gap-1 hover:underline">Download Pack <i data-lucide="download" class="w-3.5 h-3.5"></i></a>
+        </div>
+
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <i data-lucide="code" class="w-8 h-8 text-emerald-600 mb-3"></i>
+            <h4 class="font-bold text-slate-900 mb-1">Coding Club Repo</h4>
+            <p class="text-xs text-slate-600">Curated DSA sheets, previous company questions, and competitive coding resources.</p>
+          </div>
+          <a href="#" class="mt-4 text-xs font-bold text-nce-accent flex items-center gap-1 hover:underline">Access GitHub <i data-lucide="external-link" class="w-3.5 h-3.5"></i></a>
+        </div>
+
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <i data-lucide="users" class="w-8 h-8 text-purple-600 mb-3"></i>
+            <h4 class="font-bold text-slate-900 mb-1">Mock Interviews</h4>
+            <p class="text-xs text-slate-600">Schedule 1-on-1 technical and HR mock interviews with alumni mentors.</p>
+          </div>
+          <a href="#" class="mt-4 text-xs font-bold text-nce-accent flex items-center gap-1 hover:underline">Book Slot <i data-lucide="calendar" class="w-3.5 h-3.5"></i></a>
+        </div>
+
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl flex flex-col justify-between">
+          <div>
+            <i data-lucide="book-open" class="w-8 h-8 text-amber-600 mb-3"></i>
+            <h4 class="font-bold text-slate-900 mb-1">Gate & PSU Material</h4>
+            <p class="text-xs text-slate-600">Core engineering study materials and technical round question banks.</p>
+          </div>
+          <a href="#" class="mt-4 text-xs font-bold text-nce-accent flex items-center gap-1 hover:underline">Browse Vault <i data-lucide="folder" class="w-3.5 h-3.5"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & T&P Office Details -->
+  <section id="contact" class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12">
+        
+        <div>
+          <h2 class="text-xs font-bold text-nce-gold uppercase tracking-widest mb-2">Connect With Us</h2>
+          <h3 class="text-2xl sm:text-3xl font-extrabold mb-6">Training & Placement Office</h3>
+          
+          <div class="space-y-4 text-slate-300 text-sm">
+            <div class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-nce-gold shrink-0 mt-0.5"></i>
+              <p>Nalanda College of Engineering, Gokhulpur, Chandi – Jalalpur Road, Chandi, Nalanda, Bihar – 803108</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-5 h-5 text-nce-gold shrink-0"></i>
+              <p>tnp@ncechandi.ac.in | placement.ncechandi@gmail.com</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-5 h-5 text-nce-gold shrink-0"></i>
+              <p>T&P Cell Helpline: +91 6111 200 000</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="globe" class="w-5 h-5 text-nce-gold shrink-0"></i>
+              <p>Official Portal: <a href="https://ncechandi.ac.in" class="underline hover:text-white">ncechandi.ac.in</a></p>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-slate-800">
+            <h4 class="font-bold text-sm text-white mb-2">Location Context:</h4>
+            <p class="text-xs text-slate-400">Approximately 17.3 km from Bihar Sharif Junction and 42 km from Patna Airport/Railway Station.</p>
+          </div>
+        </div>
+
+        <!-- Recruiter / Student Inquiry Form -->
+        <div class="bg-white text-slate-800 p-8 rounded-xl shadow-lg">
+          <h4 class="font-bold text-xl mb-4 text-slate-900">Send an Official Invitation / Query</h4>
+          <form class="space-y-4 text-sm" onsubmit="event.preventDefault(); alert('Message sent successfully to T&P Cell.');">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name / Company Representative</label>
+              <input type="text" placeholder="e.g. Rahul Sharma" class="w-full border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-nce-accent" required>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Official Email</label>
+                <input type="email" placeholder="name@company.com" class="w-full border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-nce-accent" required>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Category</label>
+                <select class="w-full border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-nce-accent">
+                  <option>Recruiter (Campus Drive)</option>
+                  <option>Student Inquiry</option>
+                  <option>Alumni Mentorship</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Message / Drive Details</label>
+              <textarea rows="3" placeholder="Briefly describe your proposal or question..." class="w-full border border-slate-300 rounded-lg p-2.5 focus:outline-none focus:border-nce-accent" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-nce-accent hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow transition-colors">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-500 py-8 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 Training & Placement Cell, Nalanda College of Engineering, Chandi (DST Bihar). All Rights Reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+        <a href="#" class="hover:text-slate-300">Terms of Service</a>
+        <a href="#" class="hover:text-slate-300">DST Bihar Portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
